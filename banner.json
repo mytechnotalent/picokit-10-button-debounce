@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-10-button-debounce",
+  "eyebrow": "PICOKIT // LESSON 10",
+  "title": "PICOKIT // BUTTON DEBOUNCE",
+  "subtitle": "DEBOUNCED BUTTON EDGES AND AUTHENTICATED HEARTBEAT",
+  "accent": "#FF24B6",
+  "dim": "#9E1670",
+  "white": "#F3D7F4",
+  "cyan": "#7FD8E0",
+  "bg": "#11020C",
+  "bg_edge": "#050003",
+  "icon": "button",
+  "panel_status": "PRESSES 3  ·  DEBOUNCE 30 ms  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "INPUT",
+      "value": "GP15"
+    },
+    {
+      "label": "PRESSES",
+      "value": "3"
+    },
+    {
+      "label": "WINDOW",
+      "value": "30 ms"
+    },
+    {
+      "label": "RADIO",
+      "value": "-39 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00010  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] debounced presses 3  lamps cycle  onboard blink",
+    "[+] ack sent  rssi -39  snr 9.1"
+  ],
+  "categories": [
+    "BUTTON",
+    "EDGE",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "DB-01",
+      "label": "window",
+      "value": "30 ms"
+    },
+    {
+      "tag": "DB-02",
+      "label": "accept",
+      "value": "1 edge"
+    },
+    {
+      "tag": "DB-03",
+      "label": "count",
+      "value": "0-65535"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ DEBOUNCE ]=="
+  ],
+  "layout": "grid",
+  "stat": "GP15"
+}
